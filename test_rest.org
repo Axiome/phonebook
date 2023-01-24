@@ -1,0 +1,27 @@
+#+title: Test_rest
+
+#+begin_src restclient
+GET http://localhost:3001/api/dromadaire
+Content-Type: application/json
+{
+    "name": "alpha",
+    "number": "123456"
+}
+#+end_src
+
+#+RESULTS:
+#+BEGIN_SRC js
+{
+  "error": "unknown endpoint"
+}
+// GET http://localhost:3001/api/dromadaire
+// HTTP/1.1 404 Not Found
+// X-Powered-By: Express
+// Content-Type: application/json; charset=utf-8
+// Content-Length: 28
+// ETag: W/"1c-8PNhi5C+sxyTVpD91tXXmdPWMYM"
+// Date: Mon, 23 Jan 2023 14:11:41 GMT
+// Connection: keep-alive
+// Keep-Alive: timeout=5
+// Request duration: 0.042340s
+#+END_SRC
