@@ -1,7 +1,7 @@
 #+title: Test_rest
 
 #+begin_src restclient
-GET http://localhost:3001/api/dromadaire
+GET http://localhost:3001/api/persons/63d14607dab0ca05c4f82bce
 Content-Type: application/json
 {
     "name": "alpha",
@@ -12,16 +12,19 @@ Content-Type: application/json
 #+RESULTS:
 #+BEGIN_SRC js
 {
-  "error": "unknown endpoint"
+  "name": "TestAdd",
+  "number": 12345,
+  "id": "63d14607dab0ca05c4f82bce"
 }
-// GET http://localhost:3001/api/dromadaire
-// HTTP/1.1 404 Not Found
+// GET http://localhost:3001/api/persons/63d14607dab0ca05c4f82bce
+// HTTP/1.1 200 OK
 // X-Powered-By: Express
+// Access-Control-Allow-Origin: *
 // Content-Type: application/json; charset=utf-8
-// Content-Length: 28
-// ETag: W/"1c-8PNhi5C+sxyTVpD91tXXmdPWMYM"
-// Date: Mon, 23 Jan 2023 14:11:41 GMT
+// Content-Length: 65
+// ETag: W/"41-cgQkzERgcFISlY5ibF58RdfYeZE"
+// Date: Wed, 25 Jan 2023 17:24:27 GMT
 // Connection: keep-alive
 // Keep-Alive: timeout=5
-// Request duration: 0.042340s
+// Request duration: 0.061054s
 #+END_SRC
